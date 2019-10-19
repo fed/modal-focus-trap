@@ -1,0 +1,6 @@
+test/
+demo/
+README.md
+jest.config.json
+.editorconfig
+.prettierrc
