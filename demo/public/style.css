@@ -1,0 +1,38 @@
+input:focus,
+button:focus,
+a:focus {
+    outline-color: #4d90fe;
+    outline-offset: 5px;
+    outline-style: auto;
+    outline-width: 10px;
+}
+
+.container {
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 768px;
+    padding: 20px;
+    position: relative;
+}
+
+.container--dimmed {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+    background-color: #fff;
+    border: 4px #111 solid;
+    border-radius: 6px;
+    display: none;
+    left: 50%;
+    padding: 5px 15px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal--visible {
+    display: inline-block;
+}
