@@ -19,9 +19,9 @@ export function isTabKeyPressed(event: KeyboardEvent) {
 }
 
 export function getFocusableElements(context: HTMLElement): HTMLElement[] {
-    const focusableElements = Array.from(
+    const focusableElements = Array.prototype.slice.call(
         context.querySelectorAll(FOCUSABLE_ELEMENTS.join())
-    ) as HTMLElement[];
+    );
     const visibleFocusableElements = focusableElements.filter(isVisible);
 
     if (visibleFocusableElements.length === 0) {
