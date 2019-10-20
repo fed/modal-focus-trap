@@ -7,7 +7,11 @@ export function isFocusable(element: any) {
 }
 
 export function isVisible(element: HTMLElement) {
-    return element.offsetWidth > 0 && element.offsetHeight > 0;
+    return !!(
+        element.offsetWidth ||
+        element.offsetHeight ||
+        element.getClientRects().length
+    );
 }
 
 export function isTabKeyPressed(event: KeyboardEvent) {
