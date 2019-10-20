@@ -1,5 +1,6 @@
 # modal-focus-trap
 
+[![Build Status](https://travis-ci.org/fknussel/modal-focus-trap.svg?branch=master)](https://travis-ci.org/fknussel/modal-focus-trap)
 [![Downloads](https://img.shields.io/npm/dm/modal-focus-trap)](https://npm.im/modal-focus-trap)
 [![Version](https://img.shields.io/npm/v/modal-focus-trap)](https://npm.im/modal-focus-trap)
 [![License](https://img.shields.io/npm/l/modal-focus-trap)](https://opensource.org/licenses/MIT)
