@@ -1,8 +1,9 @@
+import isElement from 'lodash/isElement';
 import isFunction from 'lodash/isFunction';
 import { FOCUSABLE_ELEMENTS } from './constants';
 
 export function isFocusable(element: any) {
-    return !!element && isFunction(element.focus);
+    return isElement(element) && isFunction(element.focus);
 }
 
 export function isVisible(element: HTMLElement) {
