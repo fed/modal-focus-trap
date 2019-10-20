@@ -2,7 +2,7 @@
   "name": "modal-focus-trap",
   "version": "0.1.0",
   "license": "MIT",
-  "description": "",
+  "description": "A simple way to set up a focus trap in a DOM node",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "keywords": [
@@ -26,9 +26,13 @@
   },
   "devDependencies": {
     "@types/jest": "^24.0.19",
+    "@types/lodash": "^4.14.144",
     "@types/node": "^12.11.1",
     "jest": "^24.9.0",
     "ts-jest": "^24.1.0",
     "typescript": "^3.6.4"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15"
   }
 }

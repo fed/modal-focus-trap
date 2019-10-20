@@ -1,8 +1,5 @@
+import isFunction from 'lodash/isFunction';
 import { FOCUSABLE_ELEMENTS } from './constants';
-
-export function isFunction(object: any) {
-    return !!(object && object.constructor && object.call && object.apply);
-}
 
 export function isFocusable(element: any) {
     return !!element && isFunction(element.focus);
