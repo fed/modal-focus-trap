@@ -21,6 +21,10 @@ export default function setUpFocusTrap(
     // Engage focus trap.
     context.addEventListener('keydown', keyDownEventHandler);
 
+    // Make sure to trap focus for screen readers.
+    context.setAttribute('aria-modal', 'true');
+    context.setAttribute('role', 'dialog');
+
     // Shift focus to one of the elements within the modal.
     const elementToFocus = isFocusable(element) ? element : firstFocusableElement;
 

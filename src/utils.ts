@@ -59,6 +59,8 @@ export function getDisengageFocusTrapCallback(
 ) {
     return function (element?: HTMLElement) {
         context.removeEventListener('keydown', keyDownEventHandler);
+        context.removeAttribute('aria-modal');
+        context.removeAttribute('role');
 
         const elementToRestoreFocusTo =
             (isFocusable(element) && element) ||
