@@ -30,3 +30,28 @@ if (restoreFocus) {
     restoreFocus = null;
 }
 ```
+
+## Using with React
+
+You can also create a hook to use this helper with React:
+
+```js
+import { useRef, useEffect } from 'react';
+import focusTrap from 'modal-focus-trap';
+
+export default function useFocusTrap() {
+    const ref = useRef(null);
+
+    // Create on didMount.
+    useEffect(() => {
+        const destroy = focusTrap(ref.current);
+
+        // Destroy on willUnmount.
+        return destroy;
+    }, []);
+
+    return ref;
+}
+```
+
+See this [sample project](https://codesandbox.io/s/react-focus-trap-demo-bzitn) for more info.
